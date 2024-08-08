@@ -24,25 +24,25 @@ char *str = "abc";
 
 Text Segment or Code Segment 	
 
-						실행가능한 명령어(Instruction)가 포함된 오브젝트 파일 또는 메모리 공간을 할당받은 프로그램 섹션
+	실행가능한 명령어(Instruction)가 포함된 오브젝트 파일 또는 메모리 공간을 할당받은 프로그램 섹션
       
-						명령어(Instruction)을 변경하지 못하도록 Read-Only다
+	명령어(Instruction)을 변경하지 못하도록 Read-Only다
       
-						일반적으로 텍스트 세그먼트는 공유 가능하므로, 텍스트 편집기, C 컴파일러, 셸 등과 같이 자주 실행되는 프로그램 복사본을 메모리에 저장하여 사용할 수 있다
+	일반적으로 텍스트 세그먼트는 공유 가능 하기에 텍스트 편집기, C 컴파일러, 셸같은 프로그램 복사본을 메모리에 저장 후 활용가능
 
 Initialized Data Segment (.data)	
 
-						초기화된 전역 변수와 Static 정적 변수
+	초기화된 전역 변수와 Static 정적 변수
       
-						읽기 전용 영역(Initialized Read-Only Area)과 초기화된 읽기-쓰기 영역(Initialized Read-Write Area)로 구분
+	읽기 전용 영역(Initialized Read-Only Area)과 초기화된 읽기-쓰기 영역(Initialized Read-Write Area)로 구분
       
-            chars s[] = "hello world" 의 경우 "hello world"는 전자, str 은 후자다
+	chars s[] = "hello world" 의 경우 "hello world"는 전자, str 은 후자다
 
 Uninitialized Data Segment (.bss)
 
-            static int i1 ; int i2 ; 
+	static int i1 ; int i2 ; 
 	    
-            초기값이 없는 정적변수 i1, 전역 변수 i2 는 BSS 세그먼트에 저장된다
+	초기값이 없는 정적변수 i1, 전역 변수 i2 는 BSS 세그먼트에 저장된다
 
 Stack Heap
 
