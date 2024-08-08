@@ -4,8 +4,11 @@ char str[] = "abc";
 char *str = "abc";
 
 > gcc2_compiled.:
+> > 
 > .section .rodata
+> 
 > .LC0:
+> 
 > .byte 0x61,0x62,0x63,0x0
 
  str은 .rodata 영역에 있는 "abc"에 대한 포인터
@@ -28,6 +31,12 @@ Initialized Data Segment (.data)
 						초기화된 전역 변수와 Static 정적 변수
 						읽기 전용 영역(Initialized Read-Only Area)과 초기화된 읽기-쓰기 영역(Initialized Read-Write Area)로 구분
             chars s[] = "hello world" 의 경우 "hello world"는 전자, str 은 후자다
+
+Uninitialized Data Segment (.bss)
+            static int i1 ; int i2 ; 
+            초기값이 없는 정적변수 i1, 전역 변수 i2 는 BSS 세그먼트에 저장된다
+
+Stack Heap
 
 ## 4. async lock
 
