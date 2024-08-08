@@ -3,6 +3,11 @@
 char str[] = "abc";
 char *str = "abc";
 
+> gcc2_compiled.:
+> .section .rodata
+> .LC0:
+> .byte 0x61,0x62,0x63,0x0
+
  str은 .rodata 영역에 있는 "abc"에 대한 포인터
  str[]의 경우 함수 호출 시에 .rodata의 "abc" 문자열을 함수의 스택으로 복사
 
