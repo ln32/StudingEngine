@@ -21,45 +21,45 @@ char *str = "abc";
 
         static void Func1(List<int> target,int input)
         {
-00007FFD576971F0  push        rbp  
-00007FFD576971F1  push        rdi  
-00007FFD576971F2  push        rsi  
-00007FFD576971F3  sub         rsp,20h  
-00007FFD576971F7  mov         rbp,rsp  
-00007FFD576971FA  mov         qword ptr [rbp+40h],rcx  
-00007FFD576971FE  mov         dword ptr [rbp+48h],edx  
-00007FFD57697201  cmp         dword ptr [7FFD5759AD20h],0  
-00007FFD57697208  je          Testtt0809.Program.Func1(System.Collections.Generic.List`1<Int32>, Int32)+01Fh (07FFD5769720Fh)  
-00007FFD5769720A  call        00007FFDB71AD2F0  
-00007FFD5769720F  nop  
-            target.Add(input);
-00007FFD57697210  mov         rcx,qword ptr [rbp+40h]  
-00007FFD57697214  mov         edx,dword ptr [rbp+48h]  
-00007FFD57697217  cmp         dword ptr [rcx],ecx  
-00007FFD57697219  call        CLRStub[MethodDescPrestub]@7ffd574ffb20 (07FFD574FFB20h)  
-00007FFD5769721E  nop  
+        00007FFD576971F0  push        rbp  
+        00007FFD576971F1  push        rdi  
+        00007FFD576971F2  push        rsi  
+        00007FFD576971F3  sub         rsp,20h  
+        00007FFD576971F7  mov         rbp,rsp  
+        00007FFD576971FA  mov         qword ptr [rbp+40h],rcx  
+        00007FFD576971FE  mov         dword ptr [rbp+48h],edx  
+        00007FFD57697201  cmp         dword ptr [7FFD5759AD20h],0  
+        00007FFD57697208  je          Testtt0809.Program.Func1(System.Collections.Generic.List`1<Int32>, Int32)+01Fh (07FFD5769720Fh)  
+        00007FFD5769720A  call        00007FFDB71AD2F0  
+        00007FFD5769720F  nop  
+    		target.Add(input);
+        00007FFD57697210  mov         rcx,qword ptr [rbp+40h]  
+	00007FFD57697214  mov         edx,dword ptr [rbp+48h]  
+	00007FFD57697217  cmp         dword ptr [rcx],ecx  
+	00007FFD57697219  call        CLRStub[MethodDescPrestub]@7ffd574ffb20 (07FFD574FFB20h)  
+	00007FFD5769721E  nop  
         }
 
         static void Func2(ref List<int> target, int input)
         {
-00007FFD5769A970  push        rbp  
-00007FFD5769A971  push        rdi  
-00007FFD5769A972  push        rsi  
-00007FFD5769A973  sub         rsp,20h  
-00007FFD5769A977  mov         rbp,rsp  
-00007FFD5769A97A  mov         qword ptr [rbp+40h],rcx  
-00007FFD5769A97E  mov         dword ptr [rbp+48h],edx  
-00007FFD5769A981  cmp         dword ptr [7FFD5759AD20h],0  
-00007FFD5769A988  je          Testtt0809.Program.Func2(System.Collections.Generic.List`1<Int32> ByRef, Int32)+01Fh (07FFD5769A98Fh)  
-00007FFD5769A98A  call        00007FFDB71AD2F0  
-00007FFD5769A98F  nop  
-            target.Add(input);
-00007FFD5769A990  mov         rcx,qword ptr [rbp+40h]  
-00007FFD5769A994  mov         rcx,qword ptr [rcx]  
-00007FFD5769A997  mov         edx,dword ptr [rbp+48h]  
-00007FFD5769A99A  cmp         dword ptr [rcx],ecx  
-00007FFD5769A99C  call        System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]].Add(Int32) (07FFD73CD1080h)  
-00007FFD5769A9A1  nop  
+	00007FFD5769A970  push        rbp  
+	00007FFD5769A971  push        rdi  
+	00007FFD5769A972  push        rsi  
+	00007FFD5769A973  sub         rsp,20h  
+	00007FFD5769A977  mov         rbp,rsp  
+	00007FFD5769A97A  mov         qword ptr [rbp+40h],rcx  
+	00007FFD5769A97E  mov         dword ptr [rbp+48h],edx  
+	00007FFD5769A981  cmp         dword ptr [7FFD5759AD20h],0  
+	00007FFD5769A988  je          Testtt0809.Program.Func2(System.Collections.Generic.List`1<Int32> ByRef, Int32)+01Fh (07FFD5769A98Fh)  
+	00007FFD5769A98A  call        00007FFDB71AD2F0  
+	00007FFD5769A98F  nop  
+    		target.Add(input);
+	00007FFD5769A990  mov         rcx,qword ptr [rbp+40h]  
+	00007FFD5769A994  mov         rcx,qword ptr [rcx]  
+	00007FFD5769A997  mov         edx,dword ptr [rbp+48h]  
+	00007FFD5769A99A  cmp         dword ptr [rcx],ecx  
+	00007FFD5769A99C  call        System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]].Add(Int32) (07FFD73CD1080h)  
+	00007FFD5769A9A1  nop  
         }
 
 
