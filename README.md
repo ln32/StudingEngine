@@ -120,7 +120,7 @@ Stack Heap
 1. https://skyul.tistory.com/28
 2.
 3. https://m.blog.naver.com/techref/222270185816
-4.
-5.
+4. https://planek.tistory.com/45
+5. https://planek.tistory.com/44
 6.
 7. https://velog.io/@wjdtmfgh/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%84%A4%EA%B3%84
