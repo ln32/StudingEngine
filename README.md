@@ -1,3 +1,7 @@
+C# delegate와 c++ 함수포인터는 다르다.
+
+ex) Action temp =  () => { ; } ; 는 선언과 동시에 메모리 할당이 일어난다
+
 # 240807
 ## 1. c)  char* char[]
 char str[] = "abc";
